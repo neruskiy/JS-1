@@ -2,7 +2,7 @@
 const adminLogin = 'admin';
 const adminPassword = 'm4ngo1zh4ackz0r'
 
-const hesUser = prompt("Enter login ...")
+const hesUser = prompt("Enter login ...");
 if(hesUser === null){
     alert("Доступ запрещен!")
 } else if(hesUser !== adminLogin){
