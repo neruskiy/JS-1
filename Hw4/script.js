@@ -29,12 +29,13 @@ function Cashier(name, productDatabase, allPrice, userInput) {
     };
 
     this.countChange =  Number(userInput) - Number(this.countTotalPrice());
+
     this.onSuccess = function() {
-            alert("Thank you for your purchase.Your surrender ${this.countChange}!")
+            alert("Thank you for your purchase.Your surrender ${this.countChange}")
     };
     this.onError = function(){
             alert("Unfortunately you need more money.")
         }
     this.reset = function()
     {this.countTotalPrice() = 0};
-}
+};
